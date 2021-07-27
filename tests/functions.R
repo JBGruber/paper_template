@@ -82,10 +82,12 @@ install_missing <- function(path = "..",
     missing_packages <- needed_packages[!needed_packages %in% installed.packages()[, 1]]
     
     if (length(missing_packages) > 0) {
-      message("Some packages are missing: ", 
-              paste(missing_packages, collapse = ", "),
-              ". Should it be installed?")
       if (!identical(Sys.getenv("AUTOINSTALL"), "true")) {
+        
+        message("Some packages are missing: ", 
+                paste(missing_packages, collapse = ", "),
+                ". Should it be installed?")
+        
         choice <- menu(
           c("yes", "no"), 
           title = paste("\nSome packages are missing: ", 

@@ -20,11 +20,11 @@ knitr::opts_chunk$set(
 
 Uses continuous integrations and checks for spelling errors and if the article can be compiled on every commit.
 The article is written in the `paper` folder.
-From there it can be translated into the formats provided by the [`rticles`](https://github.com/rstudio/rticles).
+From there it can be translated into the formats provided by the [`rticles`](https://github.com/rstudio/rticles) package.
 The folder `sage` shows how this looks for the [Sage template](https://uk.sagepub.com/en-gb/eur/manuscript-submission-guidelines).
 
-The `tests` folder includes a script with two custom functions which can be used interactively.
-For example, you can run this to check the spelling of the abstract and article.
+The `tests` folder includes a script with two custom functions which are used during testing but can also be run interactively.
+You can run `custom_spell_check` to check the spelling of the abstract and article as seen below.
 If any issues are found, you will be asked if you want to add new words to your custom dictionary.
 
 ```{r spellcheck}

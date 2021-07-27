@@ -5,20 +5,21 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/JBGruber/paper_protest_troublemakers/workflows/R-CMD-check/badge.svg)](https://github.com/JBGruber/paper_protest_troublemakers/actions)
+[![R-CMD-check](https://github.com/JBGruber/paper_template/workflows/compile/badge.svg)](https://github.com/JBGruber/paper_template/actions)
 <!-- badges: end -->
 
 Uses continuous integrations and checks for spelling errors and if the
 article can be compiled on every commit. The article is written in the
 `paper` folder. From there it can be translated into the formats
-provided by the [`rticles`](https://github.com/rstudio/rticles). The
-folder `sage` shows how this looks for the [Sage
+provided by the [`rticles`](https://github.com/rstudio/rticles) package.
+The folder `sage` shows how this looks for the [Sage
 template](https://uk.sagepub.com/en-gb/eur/manuscript-submission-guidelines).
 
-The `tests` folder includes a script with two custom functions which can
-be used interactively. For example, you can run this to check the
-spelling of the abstract and article. If any issues are found, you will
-be asked if you want to add new words to your custom dictionary.
+The `tests` folder includes a script with two custom functions which are
+used during testing but can also be run interactively. You can run
+`custom_spell_check` to check the spelling of the abstract and article
+as seen below. If any issues are found, you will be asked if you want to
+add new words to your custom dictionary.
 
 ``` r
 source("./tests/functions.R")
