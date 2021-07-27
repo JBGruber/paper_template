@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 # My personal template for journal articles
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/JBGruber/paper_protest_troublemakers/workflows/R-CMD-check/badge.svg)](https://github.com/JBGruber/paper_protest_troublemakers/actions)
+[![R-CMD-check](https://github.com/JBGruber/paper_template/workflows/compile/badge.svg)](https://github.com/JBGruber/paper_template/actions)
 <!-- badges: end -->
 
 Uses continuous integrations and checks for spelling errors and if the article can be compiled on every commit.
