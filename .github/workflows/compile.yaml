@@ -21,7 +21,7 @@ jobs:
           sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+ && \
           sudo apt-get update && \
           sudo apt install -y \
-          libpoppler-cpp-dev poppler-utils r-cran-littler tools
+          libpoppler-cpp-dev poppler-utils r-cran-littler
       - name: Install pak and remaining system dependencies
         run: |
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
