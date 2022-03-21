@@ -73,7 +73,7 @@ install_missing <- function(path = "..",
     return(needed_packages)
   } else if (install_dependencies) {
     unique(unlist(lapply(
-      needed_packages, 
+      needed_packages[!needed_packages %in% installed.packages()[, 1]], 
       function(p) pak::pkg_system_requirements(package = p,
                                                os = "ubuntu", 
                                                execute = TRUE)
